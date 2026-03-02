@@ -4,45 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi mascota</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">  
 </head>
-<body>
-    <header>
-        <!--header corresponde al encabezado de la pagina-->
-        <h1>Mi Gato Killua</h1>
-        <!--h1 es el titulo, permite jeraquizar contenido-->
-    </header>
+
+<body class="bg-info bg-opacity-25">
     
-    <section>
-        <!--section define una seccion de documentos-->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+        <a class="navbar-brand" href="#">Mi Mascota</a>
 
-        <article>
-            <!--define contenido independiente de la web-->
-            <h2>¿Quién es Killua?</h2>
-            <!--h2 es un subtitulo para organizar el contenido-->
-            <img src="/assets/WhatsApp Image 2026-02-12 at 16.53.06.jpeg" alt="mi gato killua">
-            <br>  
-            <p>Es mi gato naranja de 6 meses. Es muy juguetón, curioso y le encanta explorar cada parte de mi departamento.</p>
-            <!-- p usada para escribir parrafos de textos-->
-        </article>
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <article>
-            <h2>Sus activides favoritas:</h2>
-            <ul>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Galería</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <section class="bg-warning text-dark text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Bienvenidos al mundo de Killua 🐱</h1>
+            <p class="lead">
+                Conoce la vida de mi gato naranja favorito, lleno de energía,
+                travesuras y largas siestas al sol.
+            </p>
+        </div>
+    </section>
+
+    <div class="container">
+        <header>
+            <!--header corresponde al encabezado de la pagina-->
+            <h1 class= "text-center mt-4 text-danger">Mi Gato Killua</h1>
+            <!--h1 es el titulo, permite jeraquizar contenido-->
+        </header>
+
+        <section>
+            <!--section define una seccion de documentos-->
+
+            <article>
+                <!--define contenido independiente de la web-->
+                <h2 class="text-danger">¿Quién es Killua?</h2>
+                <!--h2 es un subtitulo para organizar el contenido-->
+                <img src="/assets/img/WhatsApp Image 2026-02-12 at 16.53.06.jpeg" class="imagen-principal d-block mx-auto rounded my-3"
+                    alt="Mi gato Killua">
+                    <!-- La imagen original no tiene proporción 4:3, se utilizó object-fit: cover; para evitar deformación y mantener el encuadre visual. -->
+                    <div class="text-center">
+                        <button class="btn btn-primary mt-2">
+                            Ver más fotos de Killua
+                        </button>
+                        <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+                            ✔ Sitio actualizado correctamente.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    </div>
+                <p>Es mi gato naranja de 6 meses. Es muy juguetón, curioso y le encanta explorar cada parte de mi
+                    departamento.</p>
+                <!-- p usada para escribir parrafos de textos-->
+            </article>
+
+            <article>
+                <h2 class="text-danger">Sus actividades favoritas:</h2>
+                <ul>
                     <li>Correr detras de sus juguetes</li>
                     <li>Trepar muebles</li>
                     <li>Cazar insectos</li>
                     <li>Dormir largas siestas</li>
                 </ul>
-        </article>
-    </Section>
+            </article>
+        </section>
 
-    <aside>
-        <!--aside informa contenido adicional-->
-        <p>Dato curioso: Killua nacio en el moto del auto de mis papas, fue una sorpresa para la familia.</p>
-    </aside>
-    
-    <footer>Todos los derechos reservados</footer>
-    <!--footer representa el pie de pagina del sitio-->
+        <aside>
+            <!--aside informa contenido adicional-->
+            <p>Dato curioso: Killua nacio en el motor del auto de mis papás, fue una sorpresa para la familia.</p>
+        </aside>
+
+        <footer class="bg-dark text-white text-center py-4 mt-5">
+            <div class="container">
+                <p class="mb-0">© 2026 Mi Mascota - Todos los derechos reservados</p>
+            </div>
+        </footer>
+        <!--footer representa el pie de pagina del sitio-->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 </html>
